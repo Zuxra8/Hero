@@ -189,7 +189,16 @@ body {
 }
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 20px;
+    
+
+}
+.gallery-image:nth-last-child(9) {
+    margin: 0;
+    /* display: grid; */
+    grid-column: 2 span;
     
 }
 /* End Gallery */
